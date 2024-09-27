@@ -3,7 +3,8 @@
     "description": "yapster ai in ai for own project",
     "autoload": {
         "psr-4": {
-            "WordcoolFramework\\YapsterAi\\": "src/"
+            "YapsterAi\\": "src/",
+            "App\\": "app/"
         }
     },
     "authors": [
