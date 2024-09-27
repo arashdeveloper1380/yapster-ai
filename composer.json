@@ -1,0 +1,16 @@
+{
+    "name": "wordcool-framework/yapster-ai",
+    "description": "yapster ai in ai for own project",
+    "autoload": {
+        "psr-4": {
+            "WordcoolFramework\\YapsterAi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wordcoolframework",
+            "email": "wordcool.framework@gmail.com"
+        }
+    ],
+    "require": {}
+}
