@@ -2,8 +2,8 @@
 
 namespace App\Responses;
 
-class BirthdayResponse
-{
+final class BirthdayResponse {
+
     public function handle($intent, $data) : ? string{
 
         if ($intent === 'birthday' && isset($data)) {

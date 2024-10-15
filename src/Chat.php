@@ -13,7 +13,7 @@ class Chat {
     }
 
     public function handleQuery($query, $userName = null) {
-        $action = $this->nlpProcessor->proccessQuery($query);
+        $action = $this->nlpProcessor->processQuery($query);
         switch ($action) {
             case 'birthday':
 //                $result = $this->database->getBirthday($userName);

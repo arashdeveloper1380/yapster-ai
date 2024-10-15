@@ -4,10 +4,10 @@ require_once 'vendor/autoload.php';
 
 use YapsterAi\NLPProcessor;
 use YapsterAi\ResponseGenerator;
+use YapsterAi\Chat;
 
 $nlp        = new NLPProcessor();
 $response   = new ResponseGenerator();
+$result     = new Chat($nlp, $response);
 
-$result = new \YapsterAi\Chat($nlp, $response);
-
-echo $result->handleQuery("هویت من چیه");
+echo $result->handleQuery("کی سالگرد تولدم است؟");
