@@ -4,7 +4,7 @@ namespace YapsterAi;
 
 class ResponseGenerator {
 
-    public function generateResponse(string $intent, $data): string {
+    public function generateResponse(string $intent, $data = null) : string|\Exception {
 
         $responseHandlers = require 'App/intent.php';
 
@@ -18,7 +18,7 @@ class ResponseGenerator {
             return (new $className)->$methodName($intent, $data);
         }
         
-        return "متوجه نشدم.";
+        throw new \Exception("$intent not found");
     }
 
 }

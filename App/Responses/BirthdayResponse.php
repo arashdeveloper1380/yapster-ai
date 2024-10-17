@@ -4,11 +4,8 @@ namespace App\Responses;
 
 final class BirthdayResponse {
 
-    public function handle($intent, $data) : ? string{
-
-        if ($intent === 'birthday' && isset($data)) {
-            return "تاریخ تولد شما: " . $data;
-        }
-        return "نه دیسن!";
+    public function handle($intent) : ? string{
+        $data = "1380/01/22";
+        return !empty($data) ? "تاریخ تولد شما: " . $data : "نه دیسن!";
     }
 }

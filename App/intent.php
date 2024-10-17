@@ -1,6 +1,6 @@
 <?php
 
-return $responseHandlers = [
+return [
     'birthday' => 'BirthdayResponse@handle',
     'age'      => 'AgeResponse@handle',
 ];

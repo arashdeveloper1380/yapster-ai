@@ -10,4 +10,4 @@ $nlp        = new NLPProcessor();
 $response   = new ResponseGenerator();
 $result     = new Chat($nlp, $response);
 
-echo $result->handleQuery("کی سالگرد تولدم است؟");
+echo $result->handleQuery("سال تولدم چه سالی بوده؟"); // چند ساله هستم؟
